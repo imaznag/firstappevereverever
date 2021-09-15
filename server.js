@@ -7,7 +7,7 @@ const users = [{ name: "hicham", email: "me@gmail.com" }];
 app.get("/", (req, res) => {
   res.json(users);
 });
-
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
   console.log("listning on port 3000");
 });
